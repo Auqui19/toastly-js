@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toastly ✨</title>
+    <link rel="stylesheet" href="./src/css/toastly.css">
+
+    <style>
+        * {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="show-toast">Mostrar Alerta</button>
+
+    <script src="./src/js/toastly.js"></script>
+    <script>
+
+        const toastManager = new Toastly();
+
+        document.getElementById('show-toast').addEventListener('click', function () {
+            toastManager.show('¡Hola! Esto es una alerta.', 'success', 80000);
+        });
+    </script>
+</body>
+
+</html>
