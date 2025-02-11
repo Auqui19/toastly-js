@@ -17,3 +17,73 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.main-container h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: #282828;
+  margin-bottom: 12px;
+}
+
+.main-container p {
+  font-size: 1.2rem;
+  color: #282828;
+  font-weight: 500;
+}
+
+.toast-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.btn-git {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 600;
+  height: 40px !important;
+  border-radius: 6px;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #282828;
+  background: linear-gradient(156deg, #fff, #f0f0f0);
+  padding: 0px 30px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.06), 0 1px 0 0 rgba(0, 0, 0, 0.08),
+    0 2px 2px 0 rgba(0, 0, 0, 0.04), 0 3px 3px 0 rgba(0, 0, 0, 0.02),
+    0 4px 4px 0 rgba(0, 0, 0, 0.01);
+  transition: box-shadow 0.2s, background 0.2s;
+}
+
+.btn-git:hover {
+  background-color: #f8f8f8;
+}
+
+.btn-alert {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 600;
+  height: 40px;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+  background-color: #282828;
+  color: #f3f3f3;
+  padding: 0px 30px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-alert:hover {
+  background-color: #3c3c3c;
+}

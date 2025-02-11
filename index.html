@@ -10,16 +10,18 @@
 </head>
 
 <body>
-    <div>
-        <h1>Toastly ✨</h1>
-        <p>Mejores mensajes de notificación</p>
-        <button id="show-toast">Mostrar Alerta</button>
+    <div class="main-container">
+        <div>
+            <h1>Toastly ✨</h1>
+            <p>Mejores mensajes de notificación</p>
+        </div>
+
+        <div class="toast-container">
+            <button id="show-toast" class="btn-alert">Mostrar Alerta</button>
+            <a id="show-toast" class="btn-git" href="https://github.com/Auqui19/toastly-js">GitHub</a>
+        </div>
     </div>
 
-
-    <footer>
-
-    </footer>
 
     <script src="./src/js/toastly.js"></script>
     <script>
@@ -27,7 +29,7 @@
         const toastManager = new Toastly();
 
         document.getElementById('show-toast').addEventListener('click', function () {
-            toastManager.show('¡Hola! Esto es una alerta.', 'success', 80000);
+            toastManager.show('¡Hola! Esto es una alerta.', 'success', 3000);
         });
     </script>
 </body>
