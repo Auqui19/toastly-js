@@ -81,4 +81,4 @@ class Toastly {
   }
 }
 
-window.Toastlein = Toastlein;
+window.Toastly = Toastly;
