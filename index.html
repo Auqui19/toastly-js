@@ -12,7 +12,7 @@
 <body>
     <div class="main-container">
         <div>
-            <h1>Toastly ✨</h1>
+            <h1>Toastly</h1>
             <p>Mejores mensajes de notificación</p>
         </div>
 
@@ -26,10 +26,12 @@
     <script src="./src/js/toastly.js"></script>
     <script>
 
-        const toastManager = new Toastly();
-
         document.getElementById('show-toast').addEventListener('click', function () {
-            toastManager.show('¡Hola! Esto es una alerta.', 'success', 3000);
+            new Toastly({
+                text: 'Successly deleted.',
+                duration: 3000,
+                bgColor: null,
+            })
         });
     </script>
 </body>
